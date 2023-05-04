@@ -440,9 +440,9 @@ button.outline,
 }
 
 .input {
-  background: #e8e6de;
+  background: #fefefd;
   border-radius: 0.5rem;
-  border: 0;
+  border: 1px solid #e8e6de;
   color: #484745;
   font-family: inherit;
   font-size: 1rem;
