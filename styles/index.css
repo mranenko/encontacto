@@ -1,0 +1,519 @@
+/*
+  color helper functions + mixins
+*/
+/*
+  named colors
+*/
+/*
+  color by name
+*/
+/*
+  color accessor function
+*/
+/*
+  color swatches
+*/
+/*
+  initial color swatches
+*/
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..700&&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400..700&&display=swap");
+.swatch.black {
+  background: #484745;
+  position: relative;
+}
+.swatch.black, .swatch.black::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.black::after {
+  content: "black #484745";
+  font-size: 0.75rem;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.neutral {
+  background: #e8e6de;
+  position: relative;
+}
+.swatch.neutral, .swatch.neutral::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral::after {
+  content: "neutral #e8e6de";
+  font-size: 0.75rem;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.primary {
+  background: #3f9783;
+  position: relative;
+}
+.swatch.primary, .swatch.primary::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.primary::after {
+  content: "primary #3f9783";
+  font-size: 0.75rem;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.white {
+  background: #fefefd;
+  position: relative;
+}
+.swatch.white, .swatch.white::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.white::after {
+  content: "white #fefefd";
+  font-size: 0.75rem;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.black,
+.swatch.primary {
+  color: #fefefd;
+}
+
+.swatch.white {
+  border: 1px solid #e8e6de;
+}
+
+/*
+  neutral color swatches
+*/
+.swatch.neutral-1 {
+  background: #f7f6f3;
+  position: relative;
+}
+.swatch.neutral-1, .swatch.neutral-1::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral-1::after {
+  content: "neutral-1 #f7f6f3";
+  font-size: 0.75rem;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.neutral-2 {
+  background: #efeee9;
+  position: relative;
+}
+.swatch.neutral-2, .swatch.neutral-2::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral-2::after {
+  content: "neutral-2 #efeee9";
+  font-size: 0.75rem;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.neutral-3 {
+  background: #e8e6de;
+  position: relative;
+}
+.swatch.neutral-3, .swatch.neutral-3::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral-3::after {
+  content: "neutral-3 #e8e6de";
+  font-size: 0.75rem;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.neutral-4 {
+  background: #dad8d1;
+  position: relative;
+}
+.swatch.neutral-4, .swatch.neutral-4::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral-4::after {
+  content: "neutral-4 #dad8d1";
+  font-size: 0.75rem;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.neutral-1,
+.swatch.neutral-2 {
+  border: 1px solid #e8e6de;
+}
+
+/*
+  fonts by group
+*/
+/*
+  font accessor function
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font: normal 16px sans-serif;
+}
+
+body {
+  background: #f7f6f3;
+  color: #484745;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+code,
+pre {
+  font-family: Anonymous Pro, monospace;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  white-space: pre-line;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+h1, h2, h3 {
+  color: #3f9783;
+  font-family: Lora, sans-serif;
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 0 0 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e8e6de;
+  margin: 2.5rem 0;
+}
+
+ol,
+ul {
+  margin: 0 0 1rem 1.5rem;
+}
+
+ol li,
+ul li {
+  margin: 0 0 0.5rem;
+}
+
+/*
+  display
+*/
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/*
+  grid
+*/
+.grid {
+  display: grid;
+}
+.grid.gap-5 {
+  gap: 0.5rem;
+}
+.grid.gap-75 {
+  gap: 0.75rem;
+}
+.grid.gap-1 {
+  gap: 1rem;
+}
+.grid.gap-15 {
+  gap: 1.5rem;
+}
+.grid.grid-flow-col {
+  grid-auto-flow: column;
+}
+.grid.grid-flow-row {
+  grid-auto-flow: row;
+}
+.grid.justify-end {
+  justify-content: end;
+}
+.grid.justify-start {
+  justify-content: start;
+}
+
+/*
+  margins + padding
+*/
+.mb-05 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-15 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mt-05 {
+  margin-top: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-15 {
+  margin-top: 1.5rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.my-15 {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+/*
+  small
+*/
+.small {
+  font-size: 0.875rem;
+}
+
+/*
+  white-space
+*/
+.ws-normal {
+  white-space: normal;
+}
+
+.ws-pre-line {
+  white-space: pre-line;
+}
+
+button,
+.button {
+  align-items: center;
+  background: #3f9783;
+  border: 0;
+  border-radius: 0.5rem;
+  color: #fefefd;
+  cursor: pointer;
+  display: inline-grid;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 3rem;
+  grid-auto-flow: column;
+  line-height: 1.5;
+  padding: 0.75rem 3rem;
+}
+button.outline,
+.button.outline {
+  background: none;
+  border: 1px solid #3f9783;
+  color: #3f9783;
+}
+
+.input {
+  background: #e8e6de;
+  border-radius: 0.5rem;
+  border: 0;
+  color: #484745;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 3rem;
+  line-height: 1.5;
+  padding: 0.75rem 1rem;
+  width: 100%;
+}
+
+/*
+  display
+*/
+.layout.system header {
+  background: #fefefd;
+  border-bottom: 1px solid #e8e6de;
+  padding: 2rem;
+}
+
+.layout.system header a {
+  color: #3f9783;
+}
+
+.layout.system main {
+  background: #f7f6f3;
+  padding: 2rem;
+}
+
+.layout.system nav {
+  background: #efeee9;
+  padding: 2rem;
+}
+
+.layout.system nav a {
+  display: block;
+  font-size: 0.875rem;
+  margin: 0 -2rem;
+  padding: 0.375rem 2rem;
+}
+
+.layout.system nav a:hover {
+  background: #e8e6de;
+}
+
+.layout.system nav a.active {
+  background: #dad8d1;
+  border-left: 0.25rem solid #3f9783;
+  font-weight: 600;
+  padding-left: 1.75rem;
+}
+
+/*
+  grid
+*/
+.layout.system {
+  display: grid;
+  grid-template-areas: "header header" "nav main";
+  grid-template-columns: 15rem 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.layout.system header {
+  grid-area: header;
+}
+
+.layout.system nav {
+  grid-area: nav;
+}
+
+.layout.system main {
+  grid-area: main;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,55 @@
+/*
+  display
+*/
+
+.layout.system header {
+  background: color(white);
+  border-bottom: 1px solid color(neutral);
+  padding: 2rem;
+}
+
+.layout.system header a {
+  color: color(primary);
+}
+
+.layout.system main {
+  background: color(neutral, 1);
+  padding: 2rem;
+}
+
+.layout.system nav {
+  background: color(neutral, 2);
+  padding: 2rem;
+}
+
+.layout.system nav a {
+  display: block;
+  font-size: .875rem;
+  margin: 0 -2rem;
+  padding: .375rem 2rem;
+}
+
+.layout.system nav a:hover { background: color(neutral, 3); }
+.layout.system nav a.active {
+  background: color(neutral, 4);
+  border-left: .25rem solid color(primary);
+  font-weight: 600;
+  padding-left: 1.75rem;
+}
+
+/*
+  grid
+*/
+
+.layout.system {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'nav main';
+  grid-template-columns: 15rem 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.layout.system header { grid-area: header; }
+.layout.system nav { grid-area: nav; }
+.layout.system main { grid-area: main; }
