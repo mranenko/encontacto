@@ -5,7 +5,7 @@
 encontacto starter ui kit.
 
 
-## initial install.
+## Initial Install
 
 ```bash
 npm install
@@ -14,7 +14,7 @@ npm install
 note: this project was created with node 18.16.0 / npm 9.5.1.
 
 
-## start development server.
+## Start Development Server
 
 ```bash
 npm start
