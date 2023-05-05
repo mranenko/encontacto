@@ -274,7 +274,7 @@ p {
 h1, h2, h3 {
   color: #3f9783;
   font-family: Lora, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.25;
   margin: 0 0 1rem;
 }
@@ -426,7 +426,7 @@ button,
   display: inline-grid;
   font-family: inherit;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   height: 3rem;
   grid-auto-flow: column;
   line-height: 1.5;
