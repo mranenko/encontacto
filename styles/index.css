@@ -280,15 +280,15 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.75rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 hr {
@@ -459,7 +459,7 @@ button.outline,
 .layout.system header {
   background: #fefefd;
   border-bottom: 1px solid #e8e6de;
-  padding: 2rem;
+  padding: 3rem 2rem;
 }
 
 .layout.system header a {
