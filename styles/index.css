@@ -395,6 +395,10 @@ ul li {
   justify-content: start;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 /*
   margins + padding
 */
@@ -494,6 +498,18 @@ button.outline,
   line-height: 1.5;
   padding: 0.75rem 1rem;
   width: 100%;
+}
+
+.logo,
+.logomark {
+  color: #247783;
+  height: 1.75rem;
+  width: auto;
+}
+
+.logo.large,
+.logomark.large {
+  height: 3.5rem;
 }
 
 .tag {
