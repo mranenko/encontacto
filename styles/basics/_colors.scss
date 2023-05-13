@@ -22,8 +22,9 @@
   named colors
 */
 
-$color-arena: #e8e6de;
-$color-mar: #3f9783;
+$color-smoke: #e4e2e3;
+$color-sea: #247783;
+$color-dusk: #613d82;
 
 
 /*
@@ -31,15 +32,16 @@ $color-mar: #3f9783;
 */
 
 $colors: (
-  black: shade($color-arena, 69%),
-  primary: $color-mar,
-  white: tint($color-arena, 95%),
+  primary: $color-sea,
+  accent: $color-dusk,
+  black: shade($color-smoke, 76%),
+  white: tint($color-dusk, 99%),
 
   neutral: (
-    1: tint($color-arena, 64%),
-    2: tint($color-arena, 32%),
-    3: $color-arena,
-    4: shade($color-arena, 6%),
+    1: tint($color-smoke, 67%),
+    2: tint($color-smoke, 39%),
+    3: $color-smoke,
+    4: shade($color-smoke, 5%),
   ),
 );
 
@@ -83,6 +85,7 @@ $colors: (
   &::after {
     content: '#{$background} #{$background-value}';
     font-size: .75rem;
+    font-weight: 500;
     left: 50%;
     min-width: 4rem;
     position: absolute;
@@ -100,9 +103,10 @@ $colors: (
 */
 
 $swatches-initial: (
+  primary: color(primary),
+  accent: color(accent),
   black: color(black),
   neutral: color(neutral),
-  primary: color(primary),
   white: color(white),
 );
 
@@ -112,8 +116,9 @@ $swatches-initial: (
   }
 }
 
-.swatch.black,
-.swatch.primary {
+.swatch.primary,
+.swatch.accent,
+.swatch.black {
   color: color(white);
 }
 

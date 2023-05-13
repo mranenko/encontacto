@@ -8,12 +8,13 @@ button,
   cursor: pointer;
   display: inline-grid;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: .875rem;
   font-weight: 600;
   height: 3rem;
   grid-auto-flow: column;
-  line-height: 1.5;
-  padding: .75rem 3rem;
+  line-height: 1rem;
+  padding: .9375rem 3rem;
+  white-space: nowrap;
 
   &.outline {
     background: none;

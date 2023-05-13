@@ -19,56 +19,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..700&&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400..700&&display=swap");
-.swatch.black {
-  background: #484745;
-  position: relative;
-}
-.swatch.black, .swatch.black::after {
-  height: 6rem;
-  width: 6rem;
-  align-items: center;
-  border-radius: 50%;
-  display: inline-grid;
-  justify-content: center;
-}
-.swatch.black::after {
-  content: "black #484745";
-  font-size: 0.75rem;
-  left: 50%;
-  min-width: 4rem;
-  position: absolute;
-  transform: translateX(-2rem);
-  text-align: center;
-  overflow: visible;
-  width: 0;
-}
-
-.swatch.neutral {
-  background: #e8e6de;
-  position: relative;
-}
-.swatch.neutral, .swatch.neutral::after {
-  height: 6rem;
-  width: 6rem;
-  align-items: center;
-  border-radius: 50%;
-  display: inline-grid;
-  justify-content: center;
-}
-.swatch.neutral::after {
-  content: "neutral #e8e6de";
-  font-size: 0.75rem;
-  left: 50%;
-  min-width: 4rem;
-  position: absolute;
-  transform: translateX(-2rem);
-  text-align: center;
-  overflow: visible;
-  width: 0;
-}
-
 .swatch.primary {
-  background: #3f9783;
+  background: #247783;
   position: relative;
 }
 .swatch.primary, .swatch.primary::after {
@@ -80,8 +32,84 @@
   justify-content: center;
 }
 .swatch.primary::after {
-  content: "primary #3f9783";
+  content: "primary #247783";
   font-size: 0.75rem;
+  font-weight: 500;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.accent {
+  background: #613d82;
+  position: relative;
+}
+.swatch.accent, .swatch.accent::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.accent::after {
+  content: "accent #613d82";
+  font-size: 0.75rem;
+  font-weight: 500;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.black {
+  background: #373636;
+  position: relative;
+}
+.swatch.black, .swatch.black::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.black::after {
+  content: "black #373636";
+  font-size: 0.75rem;
+  font-weight: 500;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.neutral {
+  background: #e4e2e3;
+  position: relative;
+}
+.swatch.neutral, .swatch.neutral::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral::after {
+  content: "neutral #e4e2e3";
+  font-size: 0.75rem;
+  font-weight: 500;
   left: 50%;
   min-width: 4rem;
   position: absolute;
@@ -92,7 +120,7 @@
 }
 
 .swatch.white {
-  background: #fefefd;
+  background: #fdfdfe;
   position: relative;
 }
 .swatch.white, .swatch.white::after {
@@ -104,8 +132,9 @@
   justify-content: center;
 }
 .swatch.white::after {
-  content: "white #fefefd";
+  content: "white #fdfdfe";
   font-size: 0.75rem;
+  font-weight: 500;
   left: 50%;
   min-width: 4rem;
   position: absolute;
@@ -115,20 +144,21 @@
   width: 0;
 }
 
-.swatch.black,
-.swatch.primary {
-  color: #fefefd;
+.swatch.primary,
+.swatch.accent,
+.swatch.black {
+  color: #fdfdfe;
 }
 
 .swatch.white {
-  border: 1px solid #e8e6de;
+  border: 1px solid #e4e2e3;
 }
 
 /*
   neutral color swatches
 */
 .swatch.neutral-1 {
-  background: #f7f6f3;
+  background: #f6f5f6;
   position: relative;
 }
 .swatch.neutral-1, .swatch.neutral-1::after {
@@ -140,8 +170,9 @@
   justify-content: center;
 }
 .swatch.neutral-1::after {
-  content: "neutral-1 #f7f6f3";
+  content: "neutral-1 #f6f5f6";
   font-size: 0.75rem;
+  font-weight: 500;
   left: 50%;
   min-width: 4rem;
   position: absolute;
@@ -152,7 +183,7 @@
 }
 
 .swatch.neutral-2 {
-  background: #efeee9;
+  background: #efedee;
   position: relative;
 }
 .swatch.neutral-2, .swatch.neutral-2::after {
@@ -164,8 +195,9 @@
   justify-content: center;
 }
 .swatch.neutral-2::after {
-  content: "neutral-2 #efeee9";
+  content: "neutral-2 #efedee";
   font-size: 0.75rem;
+  font-weight: 500;
   left: 50%;
   min-width: 4rem;
   position: absolute;
@@ -176,7 +208,7 @@
 }
 
 .swatch.neutral-3 {
-  background: #e8e6de;
+  background: #e4e2e3;
   position: relative;
 }
 .swatch.neutral-3, .swatch.neutral-3::after {
@@ -188,8 +220,9 @@
   justify-content: center;
 }
 .swatch.neutral-3::after {
-  content: "neutral-3 #e8e6de";
+  content: "neutral-3 #e4e2e3";
   font-size: 0.75rem;
+  font-weight: 500;
   left: 50%;
   min-width: 4rem;
   position: absolute;
@@ -200,7 +233,7 @@
 }
 
 .swatch.neutral-4 {
-  background: #dad8d1;
+  background: #d9d7d8;
   position: relative;
 }
 .swatch.neutral-4, .swatch.neutral-4::after {
@@ -212,8 +245,9 @@
   justify-content: center;
 }
 .swatch.neutral-4::after {
-  content: "neutral-4 #dad8d1";
+  content: "neutral-4 #d9d7d8";
   font-size: 0.75rem;
+  font-weight: 500;
   left: 50%;
   min-width: 4rem;
   position: absolute;
@@ -225,7 +259,7 @@
 
 .swatch.neutral-1,
 .swatch.neutral-2 {
-  border: 1px solid #e8e6de;
+  border: 1px solid #e4e2e3;
 }
 
 /*
@@ -245,8 +279,8 @@ html {
 }
 
 body {
-  background: #f7f6f3;
-  color: #484745;
+  background: #f6f5f6;
+  color: #373636;
   font-family: Inter, sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -272,7 +306,7 @@ p {
 }
 
 h1, h2, h3 {
-  color: #3f9783;
+  color: #247783;
   font-family: Lora, sans-serif;
   font-weight: 600;
   line-height: 1.25;
@@ -293,7 +327,7 @@ h3 {
 
 hr {
   border: 0;
-  border-top: 1px solid #e8e6de;
+  border-top: 1px solid #e4e2e3;
   margin: 2.5rem 0;
 }
 
@@ -418,32 +452,33 @@ ul li {
 button,
 .button {
   align-items: center;
-  background: #3f9783;
+  background: #247783;
   border: 0;
   border-radius: 0.5rem;
-  color: #fefefd;
+  color: #fdfdfe;
   cursor: pointer;
   display: inline-grid;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 600;
   height: 3rem;
   grid-auto-flow: column;
-  line-height: 1.5;
-  padding: 0.75rem 3rem;
+  line-height: 1rem;
+  padding: 0.9375rem 3rem;
+  white-space: nowrap;
 }
 button.outline,
 .button.outline {
   background: none;
-  border: 1px solid #3f9783;
-  color: #3f9783;
+  border: 1px solid #247783;
+  color: #247783;
 }
 
 .input {
-  background: #fefefd;
+  background: #fdfdfe;
   border-radius: 0.5rem;
-  border: 1px solid #e8e6de;
-  color: #484745;
+  border: 1px solid #e4e2e3;
+  color: #373636;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 400;
@@ -457,22 +492,22 @@ button.outline,
   display
 */
 .layout.system header {
-  background: #fefefd;
-  border-bottom: 1px solid #e8e6de;
+  background: #fdfdfe;
+  border-bottom: 1px solid #e4e2e3;
   padding: 3rem 2rem;
 }
 
 .layout.system header a {
-  color: #3f9783;
+  color: #247783;
 }
 
 .layout.system main {
-  background: #f7f6f3;
+  background: #f6f5f6;
   padding: 2rem;
 }
 
 .layout.system nav {
-  background: #efeee9;
+  background: #efedee;
   padding: 2rem;
 }
 
@@ -484,12 +519,12 @@ button.outline,
 }
 
 .layout.system nav a:hover {
-  background: #e8e6de;
+  background: #e4e2e3;
 }
 
 .layout.system nav a.active {
-  background: #dad8d1;
-  border-left: 0.25rem solid #3f9783;
+  background: #d9d7d8;
+  border-left: 0.25rem solid #247783;
   font-weight: 600;
   padding-left: 1.75rem;
 }
