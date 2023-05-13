@@ -8,8 +8,10 @@
   padding: 3rem 2rem;
 }
 
-.layout.system header a {
+.layout.system header .logo {
   color: color(primary);
+  height: 1.75rem;
+  width: auto;
 }
 
 .layout.system main {
