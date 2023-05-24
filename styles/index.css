@@ -69,11 +69,11 @@
   width: 0;
 }
 
-.swatch.black {
-  background: #373636;
+.swatch.white {
+  background: #fdfdfe;
   position: relative;
 }
-.swatch.black, .swatch.black::after {
+.swatch.white, .swatch.white::after {
   height: 6rem;
   width: 6rem;
   align-items: center;
@@ -81,8 +81,8 @@
   display: inline-grid;
   justify-content: center;
 }
-.swatch.black::after {
-  content: "black #373636";
+.swatch.white::after {
+  content: "white #fdfdfe";
   font-size: 0.75rem;
   font-weight: 500;
   left: 50%;
@@ -119,11 +119,11 @@
   width: 0;
 }
 
-.swatch.white {
-  background: #fdfdfe;
+.swatch.black {
+  background: #373636;
   position: relative;
 }
-.swatch.white, .swatch.white::after {
+.swatch.black, .swatch.black::after {
   height: 6rem;
   width: 6rem;
   align-items: center;
@@ -131,8 +131,8 @@
   display: inline-grid;
   justify-content: center;
 }
-.swatch.white::after {
-  content: "white #fdfdfe";
+.swatch.black::after {
+  content: "black #373636";
   font-size: 0.75rem;
   font-weight: 500;
   left: 50%;
@@ -260,6 +260,113 @@
 .swatch.neutral-1,
 .swatch.neutral-2 {
   border: 1px solid #e4e2e3;
+}
+
+/*
+  black color swatches
+*/
+.swatch.black-1 {
+  background: #a09e9f;
+  position: relative;
+  color: #fdfdfe;
+}
+.swatch.black-1, .swatch.black-1::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.black-1::after {
+  content: "black-1 #a09e9f";
+  font-size: 0.75rem;
+  font-weight: 500;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.black-2 {
+  background: #807f7f;
+  position: relative;
+  color: #fdfdfe;
+}
+.swatch.black-2, .swatch.black-2::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.black-2::after {
+  content: "black-2 #807f7f";
+  font-size: 0.75rem;
+  font-weight: 500;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.black-3 {
+  background: #5b5a5b;
+  position: relative;
+  color: #fdfdfe;
+}
+.swatch.black-3, .swatch.black-3::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.black-3::after {
+  content: "black-3 #5b5a5b";
+  font-size: 0.75rem;
+  font-weight: 500;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.black-4 {
+  background: #373636;
+  position: relative;
+  color: #fdfdfe;
+}
+.swatch.black-4, .swatch.black-4::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.black-4::after {
+  content: "black-4 #373636";
+  font-size: 0.75rem;
+  font-weight: 500;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
 }
 
 /*

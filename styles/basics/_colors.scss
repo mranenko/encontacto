@@ -34,7 +34,6 @@ $color-dusk: #613d82;
 $colors: (
   primary: $color-sea,
   accent: $color-dusk,
-  black: shade($color-smoke, 76%),
   white: tint($color-dusk, 99%),
 
   neutral: (
@@ -42,6 +41,13 @@ $colors: (
     2: tint($color-smoke, 39%),
     3: $color-smoke,
     4: shade($color-smoke, 5%),
+  ),
+
+  black: (
+    1: shade($color-smoke, 30%),
+    2: shade($color-smoke, 44%),
+    3: shade($color-smoke, 60%),
+    4: shade($color-smoke, 76%),
   ),
 );
 
@@ -54,6 +60,7 @@ $colors: (
   $value: $colors;
 
   @if length($keys) == 1 {
+    @if nth($keys, 1) == black { @return color(black, 4); }
     @if nth($keys, 1) == neutral { @return color(neutral, 3); }
   }
 
@@ -105,9 +112,9 @@ $colors: (
 $swatches-initial: (
   primary: color(primary),
   accent: color(accent),
-  black: color(black),
-  neutral: color(neutral),
   white: color(white),
+  neutral: color(neutral),
+  black: color(black),
 );
 
 @each $name, $color in $swatches-initial {
@@ -147,4 +154,23 @@ $swatches-neutral: (
 .swatch.neutral-1,
 .swatch.neutral-2 {
   border: 1px solid color(neutral);
+}
+
+
+/*
+  black color swatches
+*/
+
+$swatches-black: (
+  1: color(black, 1),
+  2: color(black, 2),
+  3: color(black, 3),
+  4: color(black, 4),
+);
+
+@each $name, $color in $swatches-black {
+  .swatch.#{'black-' + $name} {
+    @include swatch(#{'black-' + $name}, $color);
+    color: color(white);
+  }
 }
