@@ -257,20 +257,48 @@
   width: 0;
 }
 
+.swatch.neutral-5 {
+  background: #999798;
+  position: relative;
+}
+.swatch.neutral-5, .swatch.neutral-5::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral-5::after {
+  content: "neutral-5 #999798";
+  font-size: 0.75rem;
+  font-weight: 500;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
 .swatch.neutral-1,
 .swatch.neutral-2 {
   border: 1px solid #e4e2e3;
 }
 
+.swatch.neutral-5 {
+  color: #fdfdfe;
+}
+
 /*
-  black color swatches
+  primary color swatches
 */
-.swatch.black-1 {
-  background: #a09e9f;
+.swatch.primary-1 {
+  background: #f0f5f6;
   position: relative;
-  color: #fdfdfe;
 }
-.swatch.black-1, .swatch.black-1::after {
+.swatch.primary-1, .swatch.primary-1::after {
   height: 6rem;
   width: 6rem;
   align-items: center;
@@ -278,8 +306,8 @@
   display: inline-grid;
   justify-content: center;
 }
-.swatch.black-1::after {
-  content: "black-1 #a09e9f";
+.swatch.primary-1::after {
+  content: "primary-1 #f0f5f6";
   font-size: 0.75rem;
   font-weight: 500;
   left: 50%;
@@ -291,12 +319,11 @@
   width: 0;
 }
 
-.swatch.black-2 {
-  background: #807f7f;
+.swatch.primary-2 {
+  background: #dce9eb;
   position: relative;
-  color: #fdfdfe;
 }
-.swatch.black-2, .swatch.black-2::after {
+.swatch.primary-2, .swatch.primary-2::after {
   height: 6rem;
   width: 6rem;
   align-items: center;
@@ -304,8 +331,8 @@
   display: inline-grid;
   justify-content: center;
 }
-.swatch.black-2::after {
-  content: "black-2 #807f7f";
+.swatch.primary-2::after {
+  content: "primary-2 #dce9eb";
   font-size: 0.75rem;
   font-weight: 500;
   left: 50%;
@@ -317,12 +344,11 @@
   width: 0;
 }
 
-.swatch.black-3 {
-  background: #5b5a5b;
+.swatch.primary-3 {
+  background: #c6dcdf;
   position: relative;
-  color: #fdfdfe;
 }
-.swatch.black-3, .swatch.black-3::after {
+.swatch.primary-3, .swatch.primary-3::after {
   height: 6rem;
   width: 6rem;
   align-items: center;
@@ -330,8 +356,8 @@
   display: inline-grid;
   justify-content: center;
 }
-.swatch.black-3::after {
-  content: "black-3 #5b5a5b";
+.swatch.primary-3::after {
+  content: "primary-3 #c6dcdf";
   font-size: 0.75rem;
   font-weight: 500;
   left: 50%;
@@ -343,12 +369,11 @@
   width: 0;
 }
 
-.swatch.black-4 {
-  background: #373636;
+.swatch.primary-4 {
+  background: #82b1b8;
   position: relative;
-  color: #fdfdfe;
 }
-.swatch.black-4, .swatch.black-4::after {
+.swatch.primary-4, .swatch.primary-4::after {
   height: 6rem;
   width: 6rem;
   align-items: center;
@@ -356,8 +381,8 @@
   display: inline-grid;
   justify-content: center;
 }
-.swatch.black-4::after {
-  content: "black-4 #373636";
+.swatch.primary-4::after {
+  content: "primary-4 #82b1b8";
   font-size: 0.75rem;
   font-weight: 500;
   left: 50%;
@@ -367,6 +392,67 @@
   text-align: center;
   overflow: visible;
   width: 0;
+}
+
+.swatch.primary-5 {
+  background: #247783;
+  position: relative;
+}
+.swatch.primary-5, .swatch.primary-5::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.primary-5::after {
+  content: "primary-5 #247783";
+  font-size: 0.75rem;
+  font-weight: 500;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.primary-6 {
+  background: #1d5f69;
+  position: relative;
+}
+.swatch.primary-6, .swatch.primary-6::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.primary-6::after {
+  content: "primary-6 #1d5f69";
+  font-size: 0.75rem;
+  font-weight: 500;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.primary-1,
+.swatch.primary-2 {
+  border: 1px solid #c6dcdf;
+}
+
+.swatch.primary-4,
+.swatch.primary-5,
+.swatch.primary-6 {
+  color: #fdfdfe;
 }
 
 /*

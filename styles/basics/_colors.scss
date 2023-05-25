@@ -22,9 +22,9 @@
   named colors
 */
 
-$color-smoke: #e4e2e3;
-$color-sea: #247783;
 $color-dusk: #613d82;
+$color-sea: #247783;
+$color-smoke: #e4e2e3;
 
 
 /*
@@ -32,8 +32,8 @@ $color-dusk: #613d82;
 */
 
 $colors: (
-  primary: $color-sea,
   accent: $color-dusk,
+  black: shade($color-smoke, 76%),
   white: tint($color-dusk, 99%),
 
   neutral: (
@@ -41,13 +41,16 @@ $colors: (
     2: tint($color-smoke, 39%),
     3: $color-smoke,
     4: shade($color-smoke, 5%),
+    5: shade($color-smoke, 33%),
   ),
 
-  black: (
-    1: shade($color-smoke, 30%),
-    2: shade($color-smoke, 44%),
-    3: shade($color-smoke, 60%),
-    4: shade($color-smoke, 76%),
+  primary: (
+    1: tint($color-sea, 93%),
+    2: tint($color-sea, 84%),
+    3: tint($color-sea, 74%),
+    4: tint($color-sea, 43%),
+    5: $color-sea,
+    6: shade($color-sea, 20%),
   ),
 );
 
@@ -60,8 +63,8 @@ $colors: (
   $value: $colors;
 
   @if length($keys) == 1 {
-    @if nth($keys, 1) == black { @return color(black, 4); }
     @if nth($keys, 1) == neutral { @return color(neutral, 3); }
+    @if nth($keys, 1) == primary { @return color(primary, 5); }
   }
 
   @each $key in $keys {
@@ -143,6 +146,7 @@ $swatches-neutral: (
   2: color(neutral, 2),
   3: color(neutral, 3),
   4: color(neutral, 4),
+  5: color(neutral, 5),
 );
 
 @each $name, $color in $swatches-neutral {
@@ -156,21 +160,37 @@ $swatches-neutral: (
   border: 1px solid color(neutral);
 }
 
+.swatch.neutral-5 {
+  color: color(white);
+}
+
 
 /*
-  black color swatches
+  primary color swatches
 */
 
-$swatches-black: (
-  1: color(black, 1),
-  2: color(black, 2),
-  3: color(black, 3),
-  4: color(black, 4),
+$swatches-primary: (
+  1: color(primary, 1),
+  2: color(primary, 2),
+  3: color(primary, 3),
+  4: color(primary, 4),
+  5: color(primary, 5),
+  6: color(primary, 6),
 );
 
-@each $name, $color in $swatches-black {
-  .swatch.#{'black-' + $name} {
-    @include swatch(#{'black-' + $name}, $color);
-    color: color(white);
+@each $name, $color in $swatches-primary {
+  .swatch.#{'primary-' + $name} {
+    @include swatch(#{'primary-' + $name}, $color);
   }
+}
+
+.swatch.primary-1,
+.swatch.primary-2 {
+  border: 1px solid color(primary, 3);
+}
+
+.swatch.primary-4,
+.swatch.primary-5,
+.swatch.primary-6 {
+  color: color(white);
 }
