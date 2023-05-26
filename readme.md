@@ -1,4 +1,4 @@
-<img src="images/screenshots/encontacto-ui-kit.png" style="height: auto; margin-bottom: 32px; width: 100%;">
+<img src="images/screenshot/encontacto-ui-kit.png" style="height: auto; margin-bottom: 32px; width: 100%;">
 
 # encontacto
 
